@@ -1,0 +1,70 @@
+body {
+    background-color: #000000;
+    color: #ffffff; /* Makes text white so you can read it */
+}
+
+.center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%; /* Prevents the image from overflowing on smaller screens */
+    height: auto;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.container {
+    position: relative;
+}
+
+.doorknob {
+    position: absolute;
+    left: 695px;
+    top: 250px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: none;
+    opacity: 0.5;
+}
+
+.doorknob2 {
+    position: absolute;
+    left: 695px;
+    top: 250px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: none;
+    opacity: 0.5;
+    background: grey;
+}
+
+.login-box {
+    text-align: center;
+    margin-top: 200px;
+}
+
+.answer-text {
+    text-align: center;
+    margin-top: 178px;
+}
+
+.eyes {
+    display: flex;
+    justify-content: center; /* Centers the pair */
+    gap: 200px;               /* Space between the eyes */
+    margin-top: 70px;
+}
+
+.eye {
+    width: 200px;
+}
+
+body.negative {
+    background-image: url("Bluescreen.png");
+    background-repeat: repeat;
+}
+

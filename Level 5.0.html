@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+
+
+<title>Level 5</title>
+
+</head>
+
+<body>
+
+<h1>This is a multi-part level</h1>
+
+    <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="goToNextLevel()">Submit</button>
+<script>
+        function goToNextLevel() {
+            var user = document.getElementById("username").value.trim().toLowerCase();
+            var pass = document.getElementById("password").value.trim().toLowerCase();
+
+            if (user === "cheesecar" && pass === "penis") {
+                window.location.href = "Level 6q.html";
+            } else if (user === "youareloved" && pass === "youareawesome") {
+                window.location.href = "Secret7m.html";
+            } else {
+                alert("Wrong credentials!");
+            }
+        }
+    </script>
+
+
+  
+
+
+</body>
+<br>
+<br>
+<a href="Level 5.1.html">Go to Part 1</a> 
+<br>
+<a href="Level 5.2.html">Go to Part 2</a> 
+<br>
+<a href="Level 5.3.html">Go to Part 3</a> 
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Fortune</title>
+  <link rel="stylesheet" href="Style.css">
+  <script src="Sfunction.js" defer></script>
+</head>
+<body>
+
+<p>
+    After a bit another note is slid under the door 
+    <br>The note reads:
+<em>
+<br>    a beggar sat in frOnt of a store everyday
+<br>    this beggar had a wife and kids
+<br>    he had a job, a Pet, and a house
+<br>    workEd as a politician fighting for a better world 
+<br>    maNy years of hard work allowed all of this
+<br>    althought built in years it crumbled in Days
+    <br>wife was unhappy
+    <br>kids ran away
+    <br>fired from his jOb
+    <br>pet perished
+    <br>house stOlen by his now ex
+    <br></em>Rid of all he enjoyed<em>
+    <br>now the just sits in front of a store
+</em>
+<p>    
+
+
+      <input type="text" id="username" placeholder="answer">
+        <button onclick="goToNextLevel()">Submit</button>
+<script>
+        function goToNextLevel() {
+            var user = document.getElementById("username").value.trim().toLowerCase();
+
+            if (user === "apprehension") {
+                window.location.href = "Level10.4Grief.html";
+            } else {
+                alert("Wrong credentials!");
+            }
+        }
+    </script>
+
+</body>
+</html>

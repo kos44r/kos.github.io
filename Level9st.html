@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Level 9</title>
+  
+  <link rel="stylesheet" href="Style.css">
+
+  <script src="Sfunction.js" defer></script>
+
+
+ <audio id="bgMusic" src="morse.mp3" loop></audio>
+
+<script>
+document.addEventListener("click", function () {
+  document.getElementById("bgMusic").play();
+}, { once: true });
+</script>
+</head>
+<body>
+
+  <div>
+      <img src="door.png" alt="Door" class="center-image">
+  </div>
+<h1 class="center-text">
+  Stop being too loud!
+</h1>
+
+    <input type="text" id="username" placeholder="answer">
+        <button onclick="goToNextLevel()">Submit</button>
+<script>
+        function goToNextLevel() {
+            var user = document.getElementById("username").value.trim().toLowerCase();
+
+            if (user === "giveup") {
+                window.location.href = "Level10ajsdjas.html";
+            } else {
+                alert("Wrong credentials!");
+            }
+        }
+    </script>
+
+</body>
+</html>

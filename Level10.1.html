@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Open door</title>
+  <link rel="stylesheet" href="Style.css">
+  <script src="Sfunction.js" defer></script>
+</head>
+<body>
+    
+<div class="eyes">
+    <img src="eyes.jpg" alt="Left eye" class="eye">
+    <img src="eyes.jpg" alt="Right eye" class="eye">
+</div>
+
+<p>
+  <span style="color:black;">apprehension</span>
+</p>
+
+<h1 class="answer-text">
+    Displease me
+</h1>
+
+<div class="login-box">
+    <input type="text" id="username" placeholder="answer">
+    <button onclick="goToNextLevel()">Submit</button>
+</div>
+
+
+
+<script>
+    
+function goToNextLevel() {
+    var user = document.getElementById("username").value.trim().toLowerCase();
+
+    if (user === "deathsadnessgrief") {
+        window.location.href = "Level-11.html";
+    } else {
+        alert("Wrong credentials!");
+    }
+}
+</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Level 10</title>
+  <link rel="stylesheet" href="Style.css">
+  <script src="Sfunction.js" defer></script>
+</head>
+<body>
+
+  <div class="container">
+      <img src="door.png" alt="Door" class="center-image">
+      <button class="doorknob2"></button>
+  </div>  
+
+  <h1 class="center-text">
+      There are knocks at the door,<em> open </em> it or keep it <em> close</em>d?
+    </span>
+  </h1>
+
+      <input type="text" id="username" placeholder="answer">
+        <button onclick="goToNextLevel()">Submit</button>
+    <script>
+        function goToNextLevel() {
+            var user = document.getElementById("username").value.trim().toLowerCase();
+
+            if (user === "open") {
+                window.location.href = "Level10.1.html";
+            } else if (user === "close") {
+                window.location.href = "Level10.2.html";
+            } else {
+                alert("Wrong credentials!");
+            }
+        }
+    </script>
+
+</body>
+</html>

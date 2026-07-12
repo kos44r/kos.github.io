@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+
+
+<title>Level 4</title>
+
+</head>
+
+<body>
+
+<h1>May need to <em> inspect </em> this</h1>
+<!--
+The name of the individual who participated in the games is lmzhdfr
+The password is the "alt" of an image in a different level.
+ -->
+
+    <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="goToNextLevel()">Submit</button>
+<script>
+        function goToNextLevel() {
+            var user = document.getElementById("username").value.trim().toLowerCase();
+            var pass = document.getElementById("password").value.trim().toLowerCase();
+
+            if (user === "lmzhdfr" && pass === "thankyousomuch") {
+                window.location.href = "Level 5.0.html";
+            } else {
+                alert("Wrong credentials!");
+            }
+        }
+    </script>
+<img src="SWIRLY MOG.png" alt="swirly" width="1152" height="648">
+
+  
+
+
+</body>
+</html>

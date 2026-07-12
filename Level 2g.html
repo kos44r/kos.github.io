@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+
+
+<title>User = angru</title> 
+
+
+
+
+</head>
+<body>
+
+<h1>Welcome to Level 2</h1>
+
+<p>Th1s is Lev3l tw0.</p>
+
+<p>Every answer should be in lowercase.</p>
+
+    <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="goToNextLevel()">Submit</button>
+<script>
+        function goToNextLevel() {
+            var user = document.getElementById("username").value.trim().toLowerCase();
+            var pass = document.getElementById("password").value.trim().toLowerCase();
+
+            if (user === "angru" && pass === "1310") {
+                window.location.href = "Level3.html";
+            } else {
+                alert("Wrong credentials!");
+            }
+        }
+    </script>
+<img src="Angru mog.png" alt="Mog" width="1152" height="648">
+
+</body>
+</html>
